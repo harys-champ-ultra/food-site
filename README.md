@@ -1,4 +1,4 @@
-# food-site
+# Food Website
 
 ## Project Description:
 The project involves the development of a basic website for a food service, utilizing technologies such as node.js (Express.js), hbs, and css (scss). The website consists of four main pages: home, menu, signin, and signup.
