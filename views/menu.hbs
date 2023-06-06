@@ -1,0 +1,79 @@
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">
+                    <img src="img/logo.svg" alt="awesomefood">                                   
+                </a></li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="signup">Sign-Up</a></li>
+                <li><a href="login">Log-In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="meals">
+        <section class="meals">
+            {{#each data}}
+            <div>
+                <h2>Special <span>{{categoryName}}</span></h2>
+            </div>
+            <div class="flex">
+                {{#mealKits}}
+                <div class="grids">
+                    <img src="img/{{imageUrl}}" alt="meals">
+                    <h3>{{title}}</h3>
+                    <p>{{includes}}</p>
+                    <a href="#">Continue with ${{price}}</a>
+                </div>
+                {{/mealKits}}
+            </div>
+            <br>
+            <br>
+            {{/each}}
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/">
+                    <img src="img/logo.svg" alt="awesomefood">                                   
+                </a></li>
+                <li><p>Awesome Foods CA.</p></li>
+                <li><a href="mailto:abc@123.com">abc@123.com</a></li>
+                <li><a href="tel:+123456789">+123456789</a></li>
+                <li><a href="https://www.google.com/maps/place/Canada/@59.3773411,-115.3892372,4.06z/data=!4m5!3m4!1s0x4b0d03d337cc6ad9:0x9968b72aa2438fa5!8m2!3d56.130366!4d-106.346771" target="_blank">Ottowa, Canada</a></li>
+            </ul>
+            <ul>
+                <li><p>Navigate</p></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="signup">Sign-Up</a></li>
+                <li><a href="login">Log-In</a></li>
+            </ul>
+            <ul>
+                <li><p>Social</p></li>
+                <li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="http://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="http://youtube.com" target="_blank">YouTube</a></li>
+            </ul>
+            <ul>
+                <li><p>More</p></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><p>Copyright &copy; Winter 2021</p></li>
+            </ul>
+            <ul>
+                <li><a href="#meals">Back to top</a></li>
+            </ul>
+        </nav>
+    </footer>

@@ -1,0 +1,121 @@
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">
+                    <img src="img/logo.svg" alt="awesomefood">                                   
+                </a></li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="signup">Sign-Up</a></li>
+                <li><a href="login">Log-In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="hero">
+        <img src="img/hero.jpg" alt="burger & knife">
+        <section class="hero">
+            <div>
+                <h1>World's <span>#1</span> Awesome Food.</h1>
+                <p>Deliver you the top quality food all over the world.</p>
+                <button onclick="window.location.href='#content'">Get Started</button>
+            </div>
+        </section>
+    </main>
+
+    <main id="content">
+        <section class="content">
+            <div>
+                <h2>How it <span>works?</span></h2>
+            </div>
+            <div class="flex">
+                <div class="grids">
+                    <img src="img/content-1.jpg" alt="genuine">
+                    <h3>We made genuine recipes.</h3>
+                    <p>Provide you best and pure natural ingredients food.</p>
+                </div>
+                <div class="grids">
+                    <img src="img/content-2.jpg" alt="service">
+                    <h3>Our service is 24/7.</h3>
+                    <p>Provide you the best service 24/7 all over the world.</p>
+                </div>
+                <div class="grids">
+                    <img src="img/content-3.jpg" alt="special">
+                    <h3>Our special recipe every weekend.</h3>
+                    <p>Provide you our very special legendary recipe by every end of the week.</p>
+                </div>
+                <div class="grids">
+                    <img src="img/content-4.jpg" alt="discounts">
+                    <h3>Get upto 70% special discounts.</h3>
+                    <p>Provide you the best ever discounts by order more food, and get more discounts.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main id="topmeals">
+        <section class="topmeals">
+            <div>
+                <h2>Top <span>meals</span></h2>
+            </div>
+            <div class="flex">
+                {{#each data}}
+                    {{#mealKits}}
+                        {{#topMeal}}
+                <div class="grids">
+                    <img src="img/{{imageUrl}}" alt="meals">
+                    <h3>{{title}}</h3>
+                    <p>{{includes}}</p>
+                    <a href="#">Continue with ${{price}}</a>
+                </div>
+                        {{/topMeal}}
+                    {{/mealKits}}
+                {{/each}}
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/">
+                    <img src="img/logo.svg" alt="awesomefood">                                   
+                </a></li>
+                <li><p>Awesome Foods CA.</p></li>
+                <li><a href="mailto:abc@123.com">abc@123.com</a></li>
+                <li><a href="tel:+123456789">+123456789</a></li>
+                <li><a href="https://www.google.com/maps/place/Canada/@59.3773411,-115.3892372,4.06z/data=!4m5!3m4!1s0x4b0d03d337cc6ad9:0x9968b72aa2438fa5!8m2!3d56.130366!4d-106.346771" target="_blank">Ottowa, Canada</a></li>
+            </ul>
+            <ul>
+                <li><p>Navigate</p></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="menu">Menu</a></li>
+                <li><a href="signup">Sign-Up</a></li>
+                <li><a href="login">Log-In</a></li>
+            </ul>
+            <ul>
+                <li><p>Social</p></li>
+                <li><a href="http://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="http://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="http://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="http://youtube.com" target="_blank">YouTube</a></li>
+            </ul>
+            <ul>
+                <li><p>More</p></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><p>Copyright &copy; Winter 2021</p></li>
+            </ul>
+            <ul>
+                <li><a href="#hero">Back to top</a></li>
+            </ul>
+        </nav>
+    </footer>
